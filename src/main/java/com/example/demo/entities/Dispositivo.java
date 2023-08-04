@@ -3,6 +3,8 @@ package com.example.demo.entities;
 import java.util.UUID;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -19,7 +21,9 @@ public class Dispositivo {
 		@Id
 		@GeneratedValue
 		private UUID id;
+		@Enumerated(EnumType.STRING)
 		private TipoDispositivo tipo;
+		@Enumerated(EnumType.STRING)
 		private StatoDispositivo stato;
 		
 		@ManyToOne

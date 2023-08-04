@@ -8,5 +8,4 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class DispositivoPayloadId {
-		private UUID id;
 }
